@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="http:///ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+    
+
+<div class="container">
+  <ul>
+    <li style="--clr:#EC0C19"><a href="#first" data-text="Home">Home</a></li>
+    <li style="--clr:#0625D9"><a href="#title-aboutMe" data-text="About">About</a></li>
+    <li style="--clr:#F1390A"><a href="#contactTitle" data-text="Contact">Contact</a></li>
+    <li style="--clr:#12E421"><a href="/projects.html" data-text="Project">Project</a></li>
+  </ul>
+ 
+</div>
+
+<!--slika na lijevu stranu--> 
+<div id="first" >
+  <img class="profile" src="profile.jpg" alt="Profile picture">
+  <div class="second">
+    <h3 class="titleText">My name is <br><span class="auto-type"></span></h3>
+   
+  </div>
+</div>
+
+
+<!--naslov i btn on meni + social btn--> 
+
+
+<div class="title-about">
+<h2 id="title-aboutMe">About me</h2>
+
+</div>
+
+<div class="container-two">
+  <div>
+    <img class="favpng" src="favpng.png" alt="aboutMeFav">
+  </div>
+  <div><h4 class="name">I'am Tomislav,</h4>
+        <p class="base">Based in Lorrach, Germany. Want to become Front-End developer.
+          Finished Technical school in Croatia. <br>
+          I am very passionate about improving my coding skills & websites. 
+         <br> At the moment I am improving my CSS skills (as you can see its better than my design skill😂), 
+          <br> In my defens I am praticing HTML, CSS, JS and dont want losing time for desing. <br>
+          Short-time goals (6 months) is to pratice Java-script.  <br>
+          Long-time goals (1+ year) to learn  React.js and start to become proficient.
+
+        </p>
+  </div>
+</div>
+
+
+<h2 id="contactTitle">Contact me</h2>
+
+
+<div class="container-form">
+<div class="firstLastName">
+    <label  for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstname" placeholder="Your name..">
+<br><br>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastname" placeholder="Your last name..">
+  </div>
+   
+
+  <div class="typeMsg">
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input class="btn-submit" type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+<script src="/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+  var typed = new Typed(".auto-type", {
+    strings: ["Tomislav Mikulic"],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true  })
+  
+</script>
+</body>
+
+</html>

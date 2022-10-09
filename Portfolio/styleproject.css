@@ -1,0 +1,138 @@
+
+
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+
+*{
+    margin: 0;
+}
+body {
+    
+    background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
+     background-size: 500% 500%;
+     animation: gradient 15s ease infinite;
+     position: relative;
+     height: 500px;
+ }
+ @keyframes gradient {
+     0% {
+         background-position: 0% 50%;
+     }
+     50% {
+         background-position: 100% 50%;
+     }
+     100% {
+         background-position: 0% 50%;
+     }
+ }
+
+ /*Navigation Bar start*/
+
+
+.container{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background-color:#3b2a27;
+    
+    
+}
+
+
+
+ul{
+    position: relative;
+    display: flex;
+    flex-direction: inherit;
+    gap: 15px;
+}
+ul li{
+    position: relative;
+    list-style: none;
+}
+ul li a {
+    position:relative;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(225,225,225,0.5);
+
+}
+
+
+
+
+ul li a::before{
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 2px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr)
+
+}
+
+ul li a:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+
+}
+
+
+
+/*Navigation Bar end*/
+  
+  .bgimg {
+    /* Background image */
+
+    /* Full-screen */
+    height: 100%;
+    /* Center the background image */
+    background-position: center;
+    /* Scale and zoom in the image */
+    background-size: cover;
+    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: relative;
+    /* Add a white text color to all elements inside the .bgimg container */
+    color: rgb(0, 0, 0);
+    /* Add a font */
+    font-family: "Courier New", Courier, monospace;
+    /* Set the font-size to 25 pixels */
+    font-size: 25px;
+  }
+  
+  /* Position text in the top-left corner */
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+  
+  /* Position text in the bottom-left corner */
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+  
+  /* Position text in the middle */
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style the <hr> element */
+  hr {
+    margin: auto;
+    width: 40%;
+  }
